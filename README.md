@@ -1,5 +1,5 @@
 # Raspberry Pi Pico W Kickstart
-This repo was made to speed up the process of writing your first program on the raspberry pi pico. Instrunctions for various operating systems can be found below.
+This repo was made to speed up the process of writing your first program on the Raspberry Pi Pico W. Instructions for various operating systems can be found below.
 
 ## Linux
 ### Step 1: install all prerequisite packages
