@@ -1,16 +1,16 @@
 # Raspberry Pi Pico W Kickstart
 This repo was made to speed up the process of writing your first program on the Raspberry Pi Pico W. Instructions for various operating systems can be found below.
 
-## Linux
+## Linux One-Time Setup
 ### Step 1: install all prerequisite packages
 Debian
 ```
 $ sudo apt update
-$ sudo apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
+$ sudo apt install git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
 ```
 Arch
 ```
-$ sudo pacman -Sy cmake arm-none-eabi-gcc arm-none-eabi-newlib gcc make
+$ sudo pacman -Sy git cmake arm-none-eabi-gcc arm-none-eabi-newlib gcc make
 ```
 ### Step 2: run the setup script
 ```
@@ -23,4 +23,5 @@ This will generate a `pico` directory inside of your home directory with `pico-s
 ```
 $ source $HOME/.$(echo $SHELL | awk -F '/' '{print $NF}')rc
 ```
-## MacOS
+
+## MacOS One-Time Setup
