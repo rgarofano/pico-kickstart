@@ -1,5 +1,5 @@
 # Raspberry Pi Pico / Pico W Kickstart
-This repo was made to speed up the process of writing your first program on the Raspberry Pi Pico or Pico W. This information was derived from the [official Raspberry Pi docs](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf). The goal was to make a more concise version of the first couple chapters and to provide scripts where possible to speed things up for the user.
+This repo was made to speed up the process of running your first program on the Raspberry Pi Pico or Pico W. This information was derived from the [official Raspberry Pi docs](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf). The goal was to make a more concise version of the first couple chapters and to provide scripts where possible to speed things up for the user.
 
 ## One-Time Setup
 ### Step 1: install all prerequisite packages
