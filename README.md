@@ -25,7 +25,7 @@ $ source $HOME/.$(echo $SHELL | awk -F '/' '{print $NF}')rc
 ```
 
 ## Blinking LED (Raspberry Pi Pico)
-The developers of the Raspberry Pi Pico have provided us with the code we need to blink an LED on the board so we can skip this step. We still need to go throught the process of building and compiling the code. In general when developing on the pico you write your code and then you create a seperate directory called `build` where all the files generated from building and compilation are stored. Since the code for blink is stored in `$HOME/pico/pico-examples/blink` we will create the the build directory at `$HOME/pico/pico-examples/build`:
+The developers of the Raspberry Pi Pico have provided us with the code we need to blink an LED on the board so we can skip this step. We still need to go through the process of building and compiling the code. In general when developing on the pico you write your code in one directory and then you create a seperate directory called `build` where all the files generated from the building process are stored. Since the code for blink is stored in `$HOME/pico/pico-examples/blink` we will create the the build directory at `$HOME/pico/pico-examples/build`:
 ```
 $ cd $HOME/pico/pico-examples
 $ mkdir build
@@ -44,7 +44,7 @@ This will generate a file called `blink.uf2` among others. All we need to do is 
 > Note: running make with -j4 means that 4 processors/threads will execute the command in parallel, you may choose a higher or lower number depending on your processor or omit the -j entirely
 
 ## Blinking LED (Raspberry Pi Pico W)
-The developers of the Raspberry Pi Pico have provided us with the code we need to blink an LED on the board so we can skip this step. We still need to go throught the process of building and compiling the code. In general when developing on the pico you write your code and then you create a seperate directory called `build` where all the files generated from building and compilation are stored. Since the code for blink is stored in `$HOME/pico/pico-examples/blink` we will create the the build directory at `$HOME/pico/pico-examples/build`:
+The developers of the Raspberry Pi Pico have provided us with the code we need to blink an LED on the board so we can skip the step of actually writing the code. We still need to go throught the process of building and compiling the code. In general when developing on the pico you write your code and then you create a seperate directory called `build` where all the files generated from building and compilation are stored. Since the code for blink is stored in `$HOME/pico/pico-examples/blink` we will create the the build directory at `$HOME/pico/pico-examples/build`:
 ```
 $ cd $HOME/pico/pico-examples
 $ mkdir build
@@ -52,5 +52,12 @@ $ cd build
 ```
 now that we are inside the build directory we can run the following:
 ```
-$ cmake ..
+$ cmake .. -DPICO_BOARD=pico_w
 ```
+You'll notice there are now a ton of files in the build directory, hence why we don't build in the same directory as the source code. Next we have to actually compile the code for blink which we can do by running:
+```
+$ cd pico_w/wifi/blink
+$ make -j4
+```
+This will generate a file called `picow_blink.uf2` among others. All we need to do is copy this file to the board and then it will reboot and run the blink code immediately.
+> Note: running make with -j4 means that 4 processors/threads will execute the command in parallel, you may choose a higher or lower number depending on your processor or omit the -j entirely
