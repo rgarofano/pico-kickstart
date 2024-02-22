@@ -12,8 +12,9 @@ Arch
 ```
 $ sudo pacman -Sy git cmake arm-none-eabi-gcc arm-none-eabi-newlib gcc make
 ```
-MacOS\n
-First [install brew](https://brew.sh/)
+MacOS
+
+First [install brew](https://brew.sh/) then use it to install the following:
 ```
 $ brew install cmake
 $ brew tap ArmMbed/homebrew-formulae
