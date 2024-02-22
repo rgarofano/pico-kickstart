@@ -12,6 +12,13 @@ Arch
 ```
 $ sudo pacman -Sy git cmake arm-none-eabi-gcc arm-none-eabi-newlib gcc make
 ```
+MacOS
+[Install Brew](https://brew.sh/)
+```
+$ brew install cmake
+$ brew tap ArmMbed/homebrew-formulae
+$ brew install gcc-arm-embedded
+```
 ### Step 2: run the setup script
 ```
 $ git clone https://github.com/rgarofano/pico-kickstart.git
