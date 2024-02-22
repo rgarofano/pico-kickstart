@@ -3,7 +3,7 @@ This repo was made to speed up the process of running your first program on the 
 
 ## One-Time Setup
 ### Step 1: install all prerequisite packages
-Debian
+Debian / Ubuntu / Linux Mint
 ```
 $ sudo apt update
 $ sudo apt install git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
