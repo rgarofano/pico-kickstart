@@ -12,7 +12,7 @@ Arch
 ```
 $ sudo pacman -Sy git cmake arm-none-eabi-gcc arm-none-eabi-newlib gcc make
 ```
-MacOS
+MacOS\n
 First [install brew](https://brew.sh/)
 ```
 $ brew install cmake
