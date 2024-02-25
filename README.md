@@ -1,12 +1,21 @@
 # Raspberry Pi Pico / Pico W Kickstart
 This repo was made to speed up the process of running your first program on the Raspberry Pi Pico or Pico W. This information was derived from the [official Raspberry Pi docs](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf). The goal was to make a more concise version of the first couple chapters and to provide scripts where possible to speed things up for the user.
 
+## Before starting, for windows users
+### Install WSL
+You can now install everything you need to run WSL with a single command:
+ - Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator" and then enter
+ - ```wsl --install```
+ - restart your machine
+ - launch the WSL app from the search menu
+ - follow on-screen instructions to set up login/user details.
+
 ## One-Time Setup
-### Step 1: install all prerequisite packages
+### Step 1: Install all prerequisite packages
 Debian / Ubuntu / Linux Mint
 ```
 $ sudo apt update
-$ sudo apt install git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
+$ sudo apt install git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential -y
 ```
 Arch
 ```
