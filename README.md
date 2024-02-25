@@ -6,14 +6,16 @@ This repo was made to speed up the process of running your first program on the 
 You can now install everything you need to run WSL with a single command:
  - Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator" and then enter
  - ```wsl --install```
- - finally, restart your machine.
+ - restart your machine
+ - launch the WSL app from the search menu
+ - follow on-screen instructions to set up login/user details.
 
 ## One-Time Setup
 ### Step 1: Install all prerequisite packages
 Debian / Ubuntu / Linux Mint
 ```
 $ sudo apt update
-$ sudo apt install git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
+$ sudo apt install git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential -y
 ```
 Arch
 ```
