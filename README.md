@@ -4,7 +4,7 @@ This repo was made to speed up the process of running your first program on the 
 ## Windows Users Only
 ### Install WSL
 You can now install everything you need to run WSL with a single command:
- - Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator" (or launching with `ctrl + shift + enter` from the search menu) and execute the following
+ - Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator" (or launching with `ctrl + shift + enter` from the search menu) and execute the following:
  
  ```
  wsl --install
