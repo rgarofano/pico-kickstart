@@ -12,7 +12,7 @@ You can now install everything you need to run WSL with a single command:
 
 ## One-Time Setup
 ### Step 1: Install all prerequisite packages
-Debian / Ubuntu / Linux Mint
+Debian / Ubuntu / Linux Mint / Windows (Using WSL)
 ```
 $ sudo apt update
 $ sudo apt install git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential -y
