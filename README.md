@@ -1,14 +1,12 @@
 # Raspberry Pi Pico / Pico W Kickstart
 This repo was made to speed up the process of running your first program on the Raspberry Pi Pico or Pico W. This information was derived from the [official Raspberry Pi docs](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf). The goal was to make a more concise version of the first couple chapters and to provide scripts where possible to speed things up for the user.
 
-## Before starting, for windows users
+## Windows Users Only
 ### Install WSL
 You can now install everything you need to run WSL with a single command:
- - Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator" and then enter
- - ```wsl --install```
- - restart your machine
- - launch the WSL app from the search menu
- - follow on-screen instructions to set up login/user details.
+ - Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting "Run as administrator" (or launching with `ctrl + shift + enter` from the search menu) and execute the following
+ ```wsl --install```
+ restart your machine and launch the WSL app from the search menu. Follow on-screen instructions to set up login/user details.
 
 ## One-Time Setup
 ### Step 1: Install all prerequisite packages
@@ -29,7 +27,7 @@ $ brew install cmake
 $ brew tap ArmMbed/homebrew-formulae
 $ brew install gcc-arm-embedded
 ```
-### Step 2: run the setup script
+### Step 2: Run the setup script
 ```
 $ git clone https://github.com/rgarofano/pico-kickstart.git
 $ cd pico-kickstart
@@ -61,7 +59,7 @@ This will generate a file called `blink.uf2` among others. All we need to do is 
 > Note: running make with -j4 means that 4 processors/threads will execute the command in parallel, you may choose a higher or lower number depending on your processor or omit the -j entirely
 
 ## Blinking LED (Raspberry Pi Pico W)
-The developers of the Raspberry Pi Pico have provided us with the code we need to blink an LED on the board so we can skip the step of actually writing the code. We still need to go throught the process of building and compiling the code. In general when developing on the pico you write your code and then you create a seperate directory called `build` where all the files generated from building and compilation are stored. Since the code for blink is stored in `$HOME/pico/pico-examples/blink` we will create the the build directory at `$HOME/pico/pico-examples/build`:
+The developers of the Raspberry Pi Pico have provided us with the code we need to blink an LED on the board so we can skip the step of actually writing the code. We still need to go through the process of building and compiling the code. In general when developing on the pico you write your code and then you create a seperate directory called `build` where all the files generated from building and compilation are stored. Since the code for blink is stored in `$HOME/pico/pico-examples/blink` we will create the the build directory at `$HOME/pico/pico-examples/build`:
 ```
 $ cd $HOME/pico/pico-examples
 $ mkdir build
