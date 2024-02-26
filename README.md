@@ -55,7 +55,7 @@ now that we are inside the build directory we can run the following:
 ```
 $ cmake ..
 ```
-You'll notice there are now a ton of files in the build directory, hence why we don't build in the same directory as the source code. Next we have to actually compile the code for blink which we can do by running:
+You'll notice many files have been generated in the build directory, hence why we don't build in the same directory as the source code. Next we have to actually compile the code for blink which we can do by running:
 ```
 $ cd blink
 $ make -j4
@@ -74,7 +74,7 @@ now that we are inside the build directory we can run the following:
 ```
 $ cmake .. -DPICO_BOARD=pico_w
 ```
-You'll notice there are now a ton of files in the build directory, hence why we don't build in the same directory as the source code. Next we have to actually compile the code for blink which we can do by running:
+You'll notice many files have been generated in the build directory, hence why we don't build in the same directory as the source code. Next we have to actually compile the code for blink which we can do by running:
 ```
 $ cd pico_w/wifi/blink
 $ make -j4
