@@ -18,17 +18,17 @@ Open PowerShell or Windows Command Prompt in administrator mode by right-clickin
 Debian / Ubuntu / Linux Mint / Windows (Using WSL)
 ```
 $ sudo apt update
-$ sudo apt install git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential -y
+$ sudo apt install git cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential python3 -y
 ```
 Arch
 ```
-$ sudo pacman -Sy git cmake arm-none-eabi-gcc arm-none-eabi-newlib gcc make
+$ sudo pacman -Sy git cmake arm-none-eabi-gcc arm-none-eabi-newlib gcc make python
 ```
 MacOS
 
 First [install brew](https://brew.sh/) then use it to install the following:
 ```
-$ brew install cmake
+$ brew install cmake python
 $ brew tap ArmMbed/homebrew-formulae
 $ brew install gcc-arm-embedded
 ```
